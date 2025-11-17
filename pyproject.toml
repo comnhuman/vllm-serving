@@ -1,0 +1,13 @@
+[project]
+name = "vllm-serving"
+version = "0.1.0"
+description = "vLLM 기반 LLM·임베딩·리랭킹 모델을 서빙 레포지토리입니다."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "hf-transfer>=0.1.9",
+    "ipykernel>=7.1.0",
+    "ipywidgets>=8.1.8",
+    "tqdm>=4.67.1",
+    "vllm>=0.11.0",
+]

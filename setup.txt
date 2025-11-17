@@ -1,0 +1,18 @@
+wget -qO- https://astral.sh/uv/install.sh | sh
+source $HOME/.local/bin/env
+
+uv sync
+source .venv/bin/activate
+
+# uv venv --python 3.12 --seed
+# source .venv/bin/activate
+# uv init
+
+uv add vllm
+uv add hf_transfer
+
+git config --global user.email "jeongho.jang0404@gmail.com"
+git config --global user.name "JeonghoJang"
+
+
+uv pip install torch accelerate transformers hf_transfer
